@@ -22,10 +22,10 @@ class ArticleController extends AbstractController
             ->getRepository(article::class)
             ->findAll();
         return $this->render('article/list.html.twig', [
-            'title'=> 234,
-            'subtitle' => "coucou",
+            'title'=> 555,
+            'subtitle' => "la vie animalière",
             'description' => "une longue description de chat et de chaton",
-            'articles' => $bdd_article,
+            'article' => $bdd_article,
 
         ]);
 

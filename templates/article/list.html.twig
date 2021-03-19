@@ -4,24 +4,27 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    /*.example-wrapper { margin: 1em auto; max-width: 400px; width: 100%; font:18px/1.5/cursive;; }*/
+    .example-wrapper code { background: #F5FFFA; padding: 2px 6px;  }
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ title }}! ✅</h1>
+
+    <h1>Bienvenue {{ title }}! ✅</h1>
     <h1>Hello {{ subtitle }}! ✅</h1>
-             
-     {% for article in articles %}
+    <h1>Maintenant {{description }} ✅</h1>
+
+            
+     {% for article in article %}
 	    <h1>{{ article.title }}</h1>
 	    <h2>{{ article.description }}</h2>
 	    <a href="/article/{{ article.id }}">
-	   		<img src="{{ article.image }}" height="100px" width="auto"/>
+	   		<img src="{{ article.image }}" height="400" width="400"/>
 	   	</a>
 
     {% endfor %}
 
-    
+    <br>
 
 
     Ce message vient de :
